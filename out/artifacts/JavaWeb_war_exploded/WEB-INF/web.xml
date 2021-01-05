@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>MainServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.MainServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ViewCategoryServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.ViewCategoryServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ViewProductServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.ViewProductServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>ViewItemServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.ViewItemServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>SearchProductServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.SearchProductServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewCartServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.ViewCartServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>RemoveItemFromCartServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.RemoveItemFromCartServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddItemToCartServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.AddItemToCartServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NewOrderFormServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.NewOrderFormServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SignOnServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.SignOnServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SignOutServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.SignOutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SignOnFormServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.SignOnFormServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NewAccountFormServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.NewAccountFormServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NewAccountServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.NewAccountServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditAccountServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.EditAccountServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SaveAccountServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.SaveAccountServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ConfirmOrderFormServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.ConfirmOrderFormServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewOrderServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.ViewOrderServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewListOrderServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.ViewListOrderServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MainServlet</servlet-name>
+        <url-pattern>/main</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ViewCategoryServlet</servlet-name>
+        <url-pattern>/ViewCategory</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ViewProductServlet</servlet-name>
+        <url-pattern>/ViewProduct</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ViewItemServlet</servlet-name>
+        <url-pattern>/ViewItem</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>SearchProductServlet</servlet-name>
+        <url-pattern>/SearchProduct</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ViewCartServlet</servlet-name>
+        <url-pattern>/ViewCart</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>RemoveItemFromCartServlet</servlet-name>
+        <url-pattern>/RemoveItemFromCart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddItemToCartServlet</servlet-name>
+        <url-pattern>/AddItemToCart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NewOrderFormServlet</servlet-name>
+        <url-pattern>/NewOrderForm</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SignOnServlet</servlet-name>
+        <url-pattern>/SignOn</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SignOutServlet</servlet-name>
+        <url-pattern>/SignOut</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SignOnFormServlet</servlet-name>
+        <url-pattern>/SignOnForm</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NewAccountFormServlet</servlet-name>
+        <url-pattern>/NewAccountForm</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NewAccountServlet</servlet-name>
+        <url-pattern>/NewAccount</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditAccountServlet</servlet-name>
+        <url-pattern>/EditAccount</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SaveAccountServlet</servlet-name>
+        <url-pattern>/SaveAccount</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ConfirmOrderFormServlet</servlet-name>
+        <url-pattern>/ConfirmOrderForm</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewOrderServlet</servlet-name>
+        <url-pattern>/ViewOrder</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewListOrderServlet</servlet-name>
+        <url-pattern>/ViewListOrder</url-pattern>
+    </servlet-mapping>
+</web-app>
