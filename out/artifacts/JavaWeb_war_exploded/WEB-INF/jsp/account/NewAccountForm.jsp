@@ -1,6 +1,5 @@
 <%@ include file="../common/includeTop.jsp"%>
 
-${sessionScope.messageAccount}
 
 <div id="Catalog">
 	<form action="NewAccount" method="post">
@@ -9,7 +8,13 @@ ${sessionScope.messageAccount}
 		<table>
 			<tr>
 				<td>User ID:</td>
-				<td><input type="text" name="username" value="MAX"/></td>
+				<td><input type="text" name="username" id="username" value="MAX"
+						   onblur="usernameIsExist();"/>
+					<div id="usernameMsg"></div>
+					<script type="text/javascript"
+							src="${pageContext.request.contextPath }/js/IsNameExists.js">
+					</script>
+				</td>
 			</tr>
 			<tr>
 				<td>New password:</td>
@@ -21,10 +26,6 @@ ${sessionScope.messageAccount}
 			</tr>
 			<tr>
 				<td>VerificationCode:</td>
-<%--				<td>--%>
-<%--					<input type="text" name="vCode" size="5" maxlength="4"/>--%>
-<%--					<a href="NewAccount"><img border="0" src="verificationCode" name="checkcode"></a>--%>
-<%--				</td>--%>
 			</tr>
 		</table>
 

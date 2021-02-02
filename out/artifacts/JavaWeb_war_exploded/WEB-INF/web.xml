@@ -85,6 +85,32 @@
         <servlet-name>ViewListOrderServlet</servlet-name>
         <servlet-class>org.csu.javaweb.web.servlets.ViewListOrderServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>IsNameExistsServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.IsNameExistsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FindResultServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.FindResultServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>updateCartJSServlet</servlet-name>
+        <servlet-class>org.csu.javaweb.web.servlets.updateCartJSServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>updateCartJSServlet</servlet-name>
+        <url-pattern>/updateCartJS</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FindResultServlet</servlet-name>
+        <url-pattern>/FindResult</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>IsNameExistsServlet</servlet-name>
+        <url-pattern>/IsNameExists</url-pattern>
+    </servlet-mapping>
 
     <servlet-mapping>
         <servlet-name>MainServlet</servlet-name>

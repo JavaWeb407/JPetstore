@@ -26,6 +26,10 @@
     <meta http-equiv="expires" content="0" />
     <meta http-equiv="Expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
     <meta http-equiv="Pragma" content="no-cache" />
+
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-3.3.1.js"></script>
+<%--    <link rel="stylesheet" href="../../../css/layui.css">--%>
+<%--    <script type="text/javascript" src="../../../js/layui.all.js"></script>--%>
 </head>
 
 <body>
@@ -63,8 +67,13 @@
     <div id="Search">
         <div id="SearchContent">
             <form action="SearchProduct" method="post">
-                <input type="text" name="keyword" size="14" />
+                <input type="text" id="keyword" name="keyword" size="14" onblur="searchProduct()"/>
+                <div class="auto hidden" id="auto">
+                    <div class="auto_out">1</div>
+                    <div class="auto_out">2</div>
+                </div>
                 <input type="submit" name="searchProducts" value="Search" />
+                <script src="${pageContext.request.contextPath}/js/searchProduct.js"></script>
             </form>
         </div>
     </div>

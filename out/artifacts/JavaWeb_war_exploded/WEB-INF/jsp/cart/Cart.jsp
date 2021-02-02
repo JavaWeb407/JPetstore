@@ -28,7 +28,7 @@
 			</tr>
 		</c:if>
 
-		<c:forEach var="cartItem" items="${sessionScope.cart.cartItems}">
+		<c:forEach var="cartItem" items="${sessionScope.cart.cartItems}" varStatus="status">
 			<tr>
 				<td><a href="ViewItem?itemId=${cartItem.item.itemId}">
 				${cartItem.item.itemId}
@@ -46,15 +46,17 @@
 						${cartItem.inStock}
 				</td>
 				<td>
-					<input type="text" name="${cartItem.item.itemId}" value="${cartItem.quantity}">
+					<input type="text" id="quantity"  name="${cartItem.item.itemId}"
+						   value="${cartItem.quantity}" onblur="updateCart();">
+					<div id="cartMsg"></div>
+					<script type="text/javascript" src="${pageContext.request.contextPath }/js/updateCart.js"></script>
 				</td>
 				<td>
 					<fmt:formatNumber value="${cartItem.item.listPrice}"
 					pattern="$#,##0.00" />
 				</td>
 				<td>
-					<fmt:formatNumber value="${cartItem.total}"
-					pattern="$#,##0.00" />
+					<div id="total"> </div>
 				</td>
 				<td>
 					<a class="Button" href="RemoveItemFromCart?itemId=${cartItem.item.itemId}">
@@ -64,7 +66,7 @@
 			</tr>
 		</c:forEach>
 		<tr>
-			<td colspan="7">Sub Total: <fmt:formatNumber
+			<td  id="subtotal" colspan="7">Sub Total: <fmt:formatNumber
 				value="${sessionScope.cart.subTotal}" pattern="$#,##0.00" />
 				<stripes:submit name="updateCartQuantities" value="Update Cart" />
 			</td>
